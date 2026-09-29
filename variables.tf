@@ -14,3 +14,13 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "virtual_network_name" {
+  description = "Name of the Azure virtual network"
+  type        = string
+}
+
+variable "virtual_network_address_space" {
+  description = "Address space for the Azure virtual network"
+  type        = list(string)
+}
